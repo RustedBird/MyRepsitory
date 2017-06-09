@@ -14,9 +14,11 @@ p:first-of-type:first-letter {
     margin-right: 29px;
     font: 110px/90px 'Playfair Display', serif;
     float: left;
+    color: black;
 }
 p {
     font-family: 'Lato', sans-serif;
+    color: rgb(23,23,23);
     letter-spacing: 0.2px;
     font-size: 20px;
     line-height: 33px;
