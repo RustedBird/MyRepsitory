@@ -53,6 +53,9 @@ h1 + p {
     font-size: 33px;
     margin-top: 11px;
 }
+div.title + a {
+    text-decoration: none;
+}
 div.button {
     width: 138px;
     height: 39px;
@@ -159,7 +162,7 @@ div.bottom {
     background-position: center;
     color: white;
     text-align: left;
-    padding: 57px 216px 100px 662px;
+    padding: 57px 160px 100px 730px;
     font-family: 'Lato', Arial, sans-serif;
 }
 .bottom p:nth-of-type(1) {
