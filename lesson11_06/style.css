@@ -299,15 +299,15 @@ footer  {
     margin-top: 53px;
     height: 200px;
     background: #3c4955;
+    padding: 0 50px;
 }
 footer span {
     color: white;
     font-family: 'lato Regular', Arial, sans-serif;
     font-size: 16px;
-    line-height: 200px;
     display: inline-block;
+    line-height: 200px;
     vertical-align: middle;
-    margin-left: 75px;
 }
 span > a {
     color: inherit;
@@ -320,10 +320,9 @@ footer span a:hover {
 .social-links {
     display: inline-block;
     vertical-align: middle;
-    width: 500px;
-    position: relative;
-    right: -406px;
-
+    margin-top: 72px;
+    width: 370px;
+    float: right;
 }
 .social-links a {
     display: inline-block;
