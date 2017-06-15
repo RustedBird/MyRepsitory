@@ -1,0 +1,87 @@
+/*body {*/
+    /*margin: 0;*/
+    /*position: relative;*/
+    /*background: #ccc;*/
+/*}*/
+/*.parent-relative {*/
+    /*width: auto;*/
+    /*height: auto;*/
+    /*background: white;*/
+    /*position: relative;*/
+/*}*/
+/*div {*/
+    /*vertical-align: top;*/
+    /*padding: 0;*/
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*border: 1px solid #333;*/
+    /*background: #999;*/
+    /*margin: 10px;*/
+    /*display: inline-block;*/
+    /*font-size: 25px;*/
+/*}*/
+/*.relative {*/
+    /*position: relative;*/
+    /*top: 50px;*/
+    /*right: -300px;*/
+    /*z-index: 1;*/
+/*}*/
+/*.absolute {*/
+    /*background: yellow;*/
+    /*position: absolute;*/
+    /*bottom: 70px;*/
+    /*right: 500px;*/
+/*}*/
+/*.fixed {*/
+    /*position: fixed;*/
+    /*top: 100px;*/
+    /*left: 100px;*/
+    /*background: blue;*/
+/*}*/
+
+
+
+
+/*.position-relative {*/
+    /*position: relative;*/
+    /*height: 800px;*/
+    /*background: #c0c0c0;*/
+/*}*/
+/*.position-absolute {*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin: auto;*/
+    /*position: absolute;*/
+    /*width: 50%;*/
+    /*height: 50%;*/
+    /*background: #333;*/
+/*}*/
+
+
+/*.position-relative {*/
+    /*position: relative;*/
+    /*height: 800px;*/
+    /*background: #c0c0c0;*/
+
+html {
+
+}
+body {
+
+}
+.board {
+    position: relative;
+    background: #333;
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+
+}
+.board:before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+
+}

@@ -1,56 +1,70 @@
-.board {
-    box-shadow: 15px -1px 17px 8px black;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    padding: 0px;
-    box-sizing: border-box;
-    height: 652px;
-    width: 652px;
+body {
+    padding: 10px;
+}
+.outline {
+    position: relative;
     background: #ffd28a;
-    border: 6px solid black;
-    outline: 10px solid #ffd28a;
-    font-size: 0px;
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 0;
+    box-shadow: 6px 6px 10px 4px black;
+}
+.outline:before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+
+}
+.board {
+    background: #0f0907;
+    height: 96%;
+    width: 96%;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+div.squares {
+    position: absolute;
+    top: 0.5%;
+    left: 0.5%;
+    height: 99%;
+    width: 99%;
+    background: #ffd28a;
+}
+.row {
+    height: 12.5%;
+    width: 100%;
 }
 .row div {
     display: inline-block;
-    height: 80px;
-    width: 80px;
     background: black;
-    margin-right: 80px;
+    width: 12.5%;
+    height: 100%;
+    margin-right: 12.5%;
     position: relative;
 }
-.row :last-child {
+.row:nth-of-type(even) div:last-of-type {
     margin-right: 0;
 }
-.row:nth-child(even) {
-    margin-left: 80px;
+.row:nth-of-type(even) div:first-of-type {
+    margin-left: 12.5%;
 }
-div.row .chess1 {
-    box-shadow: -3px 3px #a06642;
-    top: 3px;
-    left: 9px;
+.squares .row:nth-child(n+6) div:after,
+.squares .row:nth-child(-n+3) div:after{
     position: absolute;
-    margin: 0px;
-    box-sizing: border-box;
-    height: 66px;
-    width: 66px;
-    background: #392922;
+    top: 3%;
+    right: 3%;
+    content: '';
+    height: 90%;
+    width: 90%;
     border-radius: 50%;
 }
-div.row .chess2 {
-    box-shadow: -3px 3px #e68167;
-    top: 5px;
-    left: 9px;
-    position: absolute;
-    margin: 0px;
-    box-sizing: border-box;
-    height: 66px;
-    width: 66px;
-    background: #B62528;
-    border-radius: 50%;
+.squares .row:nth-child(-n+3) div:after {
+    background: #512222;
+    box-shadow: -2px 2px 0px #a58872;
 }
-
+.squares .row:nth-child(n+6) div:after {
+    background: #AF2226;
+    box-shadow: -2px 2px 0px #e78f94;
+}
