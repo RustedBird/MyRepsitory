@@ -1,0 +1,42 @@
+.row {
+    font-size: 0;
+}
+.row > div {
+    display: inline-block;
+    font-size: 14px;
+    text-align: justify;
+    padding: 1%;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-6 {
+    width: 50%;
+}
+
+.fl-row > div {
+    text-align: justify;
+    padding: 1%;
+    float: left;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.fl-col-4 {
+    width: 33.33%;
+}
+.fl-col-8 {
+    width: 66.66%;
+}
+.fl-row:after {
+    content: '';
+    display: block;
+    clear: both;
+}

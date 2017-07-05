@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+header {
+    background: #979797;
+    width: 96%;
+    height: 20%;
+    margin: auto;
+}
+header p {
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+    top: 40%;
+    font-size: 318%;
+    margin: 0;
+    left: 3%;
+}

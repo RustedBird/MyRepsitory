@@ -1,0 +1,41 @@
+
+.board {
+    width: 600px;
+    height: 600px;
+    background: #ffd28a;
+    margin: 3% auto;
+    border: 2px solid black;
+    outline: 20px solid #ffd28a;
+    box-shadow: 16px 6px 33px 22px black;
+}
+.row {
+    height: 12.5%;
+    width: 100%;
+}
+.row div {
+    height: 100%;
+    width: 12.5%;
+    background: #0f0907;
+    float: left;
+}
+.row:nth-child(odd) div {
+    margin-right: 12.5%;
+}
+.row:nth-child(even) div {
+    margin-left: 12.5%;
+}
+.row:nth-child(-n+3) div:after,
+.row:nth-child(n+6) div:after {
+    content: '';
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    float: left;
+    margin: 5% 5%;
+}
+.row:nth-child(-n+3) div:after {
+    background: #672727;
+}
+.row:nth-child(n+6) div:after {
+    background: #BB2228;
+}

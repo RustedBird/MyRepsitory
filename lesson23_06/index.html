@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>payment form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="get">
+        <label for="name">Your name:*</label><br>
+        <input type="text" placeholder="Name" name="Name" id="name" required="required">
+
+        <label>Your Surname: <br>
+            <input type="text" placeholder="Surname" name="surname">
+        </label>
+
+        <input type="text" disabled="disabled" placeholder="Login" value="NickName">
+
+        <input type="email" placeholder="Your email" name="email">
+
+        <input type="tel" placeholder="Phone" name="phone">
+
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your text here"></textarea>
+
+        <label><input type="radio" name="radio" id="radio1">Radio Button1</label>
+        <label><input type="radio" name="radio" id="radio2" checked="checked">Radio Button2</label>
+        <label><input type="radio" name="radio" id="radio3">Radio Button3</label>
+        <label><input type="radio" name="radio" id="radio4">Radio Button4</label>
+        <label><input type="radio" name="radio" id="radio5">Radio Button5</label>
+        <hr>
+        <br>
+        <input type="checkbox" name="checkbox" id="checkbox1">
+        <label for="checkbox1">Chb1</label>
+        <input type="checkbox" name="checkbox" id="checkbox2">
+        <label for="checkbox2">Chb2</label>
+        <input type="checkbox" name="checkbox" id="checkbox3">
+        <label for="checkbox3">Chb3</label>
+        <br>
+        <label>
+        <section>
+            <select name="select" id="select">
+                <option value="" selected>none</option>
+                <option value="1">option1</option>
+                <option value="2">option2</option>
+                <option value="3">option3</option>
+                <option value="4">option4</option>
+                <option value="5">option5</option>
+            </select>
+        </section>
+        </label>
+        <hr>
+        <button type="submit">Отправить форму</button>
+        <hr>
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+div {
+    width: 150px;
+    height: 100%;
+    background: #ccc;
+    border: 1px solid #333;
+    display: inline-block;
+    overflow: auto;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+    margin-right: 50%;
+}
+.cleaner {
+    clear: both;
+}
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+body {
+    text-align: center;
+}
+span {
+    float: left;
+    width: 60%;
+    /*height: 100px;*/
+    background: #ccc;
+    border: 1px solid #333;
+    display: inline-block;
+    margin: 0 auto;
+}
+span:nth-of-type(5) {
+    position: relative;
+    top: 31px;
+    left: 55px;
+}
+span:nth-of-type(8) {
+    position: fixed;
+    top: 150px;
+}
+section {
+    height: 100%;
+}
+body, html {
+    height: 100%;
+}
